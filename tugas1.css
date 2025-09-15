@@ -1,0 +1,78 @@
+ *{
+    padding: 0;
+    margin: 0;
+ }
+ tr,
+ td,
+ table {
+     border: 2px solid;
+     color: rgb(0, 0, 0);
+     text-align: center;
+     width: 30vw;
+     height: 10vh;
+     max-height: 200px;
+     max-width: 200px;
+ }
+
+ table,
+ .table {
+     margin: 2rem;
+ }
+
+ tr:hover,
+ td:hover,
+ table:hover {
+     color: red;
+ }
+
+ /* 
+ }
+     rotate: 90deg;
+ p:hover{
+    rotate: -90deg;
+ } */
+/* 
+ table {
+     rotate: 90deg;
+ }
+
+ p {
+     rotate: -90deg;
+ } */
+
+ .container {
+     display: flex;
+     position: relative;
+     align-items: center;
+     justify-content: center;
+ }
+/* button{
+    position: relative;
+} */
+ .tes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+ }
+ button{
+    margin-right: 1rem;
+    padding: 1em 2em;
+    border: none;
+    color:aliceblue;
+    border-radius: 20px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ button::after {
+    content: "";
+    position: absolute; /* Menambahkan positioning */
+    width: calc(100% + 8px);   /* Ukuran yang lebih presisi */
+    height: calc(100% + 7px);  /* Ukuran yang lebih presisi */
+    border-radius: 20px;       /* Syntax yang benar */
+    z-index: -1;
+    background-image: linear-gradient(to bottom right, rgb(4, 0, 255), rgb(225, 0, 255));
+}
